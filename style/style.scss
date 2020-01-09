@@ -216,7 +216,7 @@ h4{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    background-image: url('../img/upp-hero1-4.jpg');
+    background-image: url('../img/upp_hero1_4.jpg');
     height: 500px;
     @include centerHero;
     margin-top: 30px;
@@ -361,12 +361,12 @@ h4{
 }
 
 .tuomas-img {
-    background-image: url('../img/man-profile.png');
+    background-image: url('../img/man_profile.jpg');
     @include roundImg;
 }
 
 .ilmari-img {
-    background-image: url('../img/man-profile.png');
+    background-image: url('../img/man_profile.jpg');
     @include roundImg;
 
     @include desktop {
@@ -440,7 +440,7 @@ footer {
 }
 
 .puunkaato-img {
-    background-image: url('../img/puun-kaato.jpg');
+    background-image: url('../img/puun_kaato.jpg');
     @include centerImgPalvelut;
 }
 
@@ -525,15 +525,17 @@ footer {
         rgba(4, 102, 13, 0.4)
     ), 
     
-        url('../img/case-1.jpg');
+        url('../img/case_1.jpg');
+        
         @include centerImgCaset;
+
     &:hover{
         background: linear-gradient(
         rgba(1, 41, 6, 0.445),
         rgba(1, 41, 6, 0.445)
     ), 
     
-        url('../img/case-1.jpg');
+        url('../img/case_1.jpg');
         @include centerImgCaset;
     }
     
@@ -561,7 +563,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    background-image: url('../img/case-2.jpg');
+    background-image: url('../img/case_2.jpg');
     @include centerImgCaset;
 
     div {

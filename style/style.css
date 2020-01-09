@@ -508,7 +508,7 @@ h4 {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  background-image: url("../img/upp-hero1-4.jpg");
+  background-image: url("../img/upp_hero1_4.jpg");
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -721,7 +721,7 @@ h4 {
 }
 
 .tuomas-img {
-  background-image: url("../img/man-profile.png");
+  background-image: url("../img/man_profile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -731,7 +731,7 @@ h4 {
 }
 
 .ilmari-img {
-  background-image: url("../img/man-profile.png");
+  background-image: url("../img/man_profile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -801,7 +801,7 @@ footer a:hover {
 }
 
 .puunkaato-img {
-  background-image: url("../img/puun-kaato.jpg");
+  background-image: url("../img/puun_kaato.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -878,8 +878,8 @@ footer a:hover {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 102, 13, 0.4)), to(rgba(4, 102, 13, 0.4))), url("../img/case-1.jpg");
-  background: linear-gradient(rgba(4, 102, 13, 0.4), rgba(4, 102, 13, 0.4)), url("../img/case-1.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 102, 13, 0.4)), to(rgba(4, 102, 13, 0.4))), url("../img/case_1.jpg");
+  background: linear-gradient(rgba(4, 102, 13, 0.4), rgba(4, 102, 13, 0.4)), url("../img/case_1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -891,8 +891,8 @@ footer a:hover {
 }
 
 .case-1-img:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 41, 6, 0.445)), to(rgba(1, 41, 6, 0.445))), url("../img/case-1.jpg");
-  background: linear-gradient(rgba(1, 41, 6, 0.445), rgba(1, 41, 6, 0.445)), url("../img/case-1.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 41, 6, 0.445)), to(rgba(1, 41, 6, 0.445))), url("../img/case_1.jpg");
+  background: linear-gradient(rgba(1, 41, 6, 0.445), rgba(1, 41, 6, 0.445)), url("../img/case_1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -928,7 +928,7 @@ footer a:hover {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-  background-image: url("../img/case-2.jpg");
+  background-image: url("../img/case_2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
