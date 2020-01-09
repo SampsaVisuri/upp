@@ -1,0 +1,948 @@
+/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+	Eric Meyer					:: http://meyerweb.com
+	HTML5 Doctor				:: http://html5doctor.com
+	and the HTML5 Boilerplate	:: http://html5boilerplate.com
+-------------------------------------------------------------------------------*/
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+main, article, aside, figure, footer, header, nav, section, details, summary {
+  display: block;
+}
+
+/* Handle box-sizing while better addressing child elements:
+   http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+/* Responsive images and other embedded objects */
+/* if you don't have full control over `img` tags (if you have to overcome attributes), consider adding height: auto */
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+/*
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+	In fact, it *will* cause problems with Google Maps' controls at small size.
+	If this is the case for you, try uncommenting the following:
+#map img {
+		max-width: none;
+}
+*/
+/* force a vertical scrollbar to prevent a jumpy page */
+html {
+  overflow-y: scroll;
+}
+
+/* we use a lot of ULs that aren't bulleted.
+	you'll have to restore the bullets within content,
+	which is fine because they're probably customized anyway */
+ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+pre {
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */
+}
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+select, input, textarea {
+  font: 99% sans-serif;
+}
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+small {
+  font-size: 85%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+td, td img {
+  vertical-align: top;
+}
+
+/* Make sure sup and sub don't mess with your line-heights http://gist.github.com/413930 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
+
+/* hand cursor on clickable elements */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer;
+}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {
+  margin: 0;
+}
+
+/* make buttons play nice in IE */
+button,
+input[type=button] {
+  width: auto;
+  overflow: visible;
+}
+
+/* scale images in IE7 more attractively */
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* prevent BG image flicker upon hover
+   (commented out as usage is rare, and the filter syntax messes with some pre-processors)
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+*/
+/* let's clear some floats */
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #222;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 22px;
+  color: #222;
+  margin: 10px 10px 10px 10px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  p {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  p {
+    margin: 0;
+  }
+}
+
+h1 {
+  font-size: 46px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #444;
+  letter-spacing: 1px;
+  margin: 30px 10px 10px 10px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  h1 {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  h1 {
+    margin: 0;
+  }
+}
+
+h2 {
+  font-size: 38px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #444;
+  letter-spacing: 1px;
+  margin: 30px 10px 10px 10px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  h2 {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  h2 {
+    margin: 0;
+  }
+}
+
+h3 {
+  font-size: 32px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #444;
+  letter-spacing: 1px;
+  margin: 30px 10px 10px 10px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  h3 {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  h3 {
+    margin: 0;
+  }
+}
+
+h4 {
+  font-size: 26px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #444;
+  letter-spacing: 1px;
+  margin: 30px 10px 10px 10px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  h4 {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  h4 {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .desktop-margin {
+    margin: 0 100px 0 100px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .desktop-margin {
+    margin: 0 200px 0 200px;
+  }
+}
+
+.space {
+  height: 50px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .space {
+    height: 120px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .space {
+    height: 120px;
+  }
+}
+
+.nav-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 6fr 5fr;
+        grid-template-columns: 6fr 5fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .nav-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 6fr 3fr;
+        grid-template-columns: 6fr 3fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+}
+
+#logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #666;
+  letter-spacing: 2px;
+  -webkit-transition-duration: 0.2s;
+  /* Safari */
+  transition-duration: 0.2s;
+}
+
+#logo:hover {
+  color: #660021;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    color: #666;
+    letter-spacing: 2px;
+    margin: 30px 75px 10px 75px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #logo {
+    display: none;
+  }
+}
+
+#desktop-logo {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #desktop-logo {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #desktop-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    color: #666;
+    letter-spacing: 2px;
+    -webkit-transition-duration: 0.2s;
+    /* Safari */
+    transition-duration: 0.2s;
+    margin: 30px 75px 10px 75px;
+  }
+  #desktop-logo:hover {
+    color: #660021;
+  }
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 43px;
+}
+
+.nav-links a:hover {
+  color: #888;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 43px;
+    margin-right: 78px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 43px;
+    margin-right: 78px;
+  }
+}
+
+.active {
+  border-bottom: 2px solid #222;
+}
+
+.hero-img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  background-image: url("../img/upp-hero1-4.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  margin-top: 30px;
+}
+
+.slogun {
+  position: relative;
+  margin: auto;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 10;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.slogun h2 {
+  color: #fff;
+  font-size: 36px;
+  text-shadow: 0.5px 0.5px #777;
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .slogun h2 {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .slogun h2 {
+    display: none;
+  }
+}
+
+.hidden-slogun {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .hidden-slogun {
+    display: block;
+    position: relative;
+    margin: auto;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 10;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 5;
+  }
+  .hidden-slogun h2 {
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 0.5px 0.5px #777;
+  }
+}
+
+.call-to-action {
+  position: relative;
+  margin: auto;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 9;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  grid-row-end: 8;
+}
+
+.call-to-action a {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #B30C42;
+  color: #fff;
+  padding: 15px;
+  border-radius: 3%;
+  margin: 0;
+  -webkit-transition-duration: 0.2s;
+  /* Safari */
+  transition-duration: 0.2s;
+}
+
+.call-to-action a:hover {
+  background-color: #f893b4;
+  color: #222;
+}
+
+.axe-img {
+  background-image: url("../img/axe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  padding: 20px 0 20px 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .axe-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    margin: 30px 0 20px 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .axe-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    margin: 30px 0 20px 0;
+  }
+}
+
+.palvelut-img {
+  background-image: url("../img/palvelut.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  padding: 20px 0 20px 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .palvelut-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    margin: 30px 0 20px 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .palvelut-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    margin: 30px 0 20px 0;
+  }
+}
+
+.button {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #B30C42;
+  color: #fff;
+  padding: 15px;
+  border-radius: 3%;
+  margin: 40px 0 10px 10px;
+  -webkit-transition-duration: 0.2s;
+  /* Safari */
+  transition-duration: 0.2s;
+}
+
+.button:hover {
+  background-color: #f893b4;
+  color: #222;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .button {
+    margin: 40px 0 10px 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .button {
+    margin: 40px 0 10px 0;
+  }
+}
+
+.yhteystiedot-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .yhteystiedot-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.contact-info {
+  margin-bottom: 40px;
+}
+
+.contact-info p {
+  line-height: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+.tuomas-img {
+  background-image: url("../img/man-profile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.ilmari-img {
+  background-image: url("../img/man-profile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .ilmari-img {
+    margin-left: 80px;
+  }
+}
+
+footer {
+  background-color: #660021;
+  padding: 20px 0 20px 0;
+  line-height: 60px;
+}
+
+footer p {
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  footer p {
+    margin: 0 100px 0 100px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  footer p {
+    margin: 0 200px 0 200px;
+  }
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #999;
+}
+
+@media only screen and (min-width: 1024px) {
+  .palvelut-wrap {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-gap: 30px;
+  }
+}
+
+#puunkaato {
+  margin-bottom: 15px;
+}
+
+#puiden-hoito {
+  margin-bottom: 15px;
+}
+
+#lisatyot {
+  margin-bottom: 15px;
+}
+
+.puunkaato-img {
+  background-image: url("../img/puun-kaato.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+}
+
+.puiden-hoito-img {
+  background-image: url("../img/oksa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+}
+
+.lisatyot-img {
+  background-image: url(../img/kirves.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .case-wrap {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    grid-gap: 30px;
+  }
+}
+
+.case-wrap .case-block-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr auto;
+      grid-template-rows: 1fr auto;
+  border-style: solid;
+  border-width: thin;
+  border-spacing: 5px;
+  margin: 30px 0 30px 0;
+}
+
+.case-wrap .case-block-wrap .case-text {
+  padding: 10px 10px 10px 10px;
+}
+
+.case-h2 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-shadow: 0.7px 0.7px #333;
+  font-size: 46px;
+  text-align: center;
+}
+
+.case-h4 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-shadow: 1px 1px #333;
+  font-size: 26px;
+  text-align: center;
+}
+
+.case-1-img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 102, 13, 0.4)), to(rgba(4, 102, 13, 0.4))), url("../img/case-1.jpg");
+  background: linear-gradient(rgba(4, 102, 13, 0.4), rgba(4, 102, 13, 0.4)), url("../img/case-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 250px;
+}
+
+.case-1-img:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 41, 6, 0.445)), to(rgba(1, 41, 6, 0.445))), url("../img/case-1.jpg");
+  background: linear-gradient(rgba(1, 41, 6, 0.445), rgba(1, 41, 6, 0.445)), url("../img/case-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 250px;
+}
+
+.case-1-img div {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+}
+
+.case-1-img .arrow-icon {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  text-shadow: 1px 1px #333;
+}
+
+.case-2-img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  background-image: url("../img/case-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 250px;
+}
+
+.case-2-img div {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+}
+
+.small-space {
+  margin: 30px;
+}
+/*# sourceMappingURL=style.css.map */

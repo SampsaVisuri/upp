@@ -1,0 +1,49 @@
+
+
+// Colors
+
+$main-color: #0CB31D;
+$main-color-light: #2BFF41;
+$main-color-dark: #04660D;
+$button-color: #B30C42;
+$button-hover: lighten($button-color, 40%);
+$footer-color: #660021;
+
+$header-color: #444;
+$text-color: #222;
+$text-hover: #888;
+$logo-color: #666;
+
+
+
+
+// Fonts
+
+$header-font: 'Yanone Kaffeesatz', sans-serif;
+$text-font: 'Source Sans Pro', sans-serif;
+
+$p-small: 18px;
+$p: 22px;
+$p-big: 24px;
+
+$h1: 46px;
+$h2: 38px;
+$h3: 32px;
+$h4: 26px;
+
+ 
+// Space
+
+$small-space-between: 30px;
+$space-between: 50px;
+$space-between-desktop: 120px;
+
+
+
+// Media Query
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+$tablet-margin: 0 100px 0 100px;
+$desktop-margin: 0 200px 0 200px;
